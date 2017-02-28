@@ -40,32 +40,30 @@ h1
 img
 {
   margin-top: -25px;
+  position: absolute;
 }
 label
 {
   color: black;
   font-size: 20px;
   margin-left: 460px;
-  margin-top: -150px;
+  margin-top: 150px;
   font-family: "sans-serif";
-  display:block;
+  display:inline-block;
 }
 
 input
 {
-  margin-top: 0;
-  border-width: medium;
+  border-width:medium;
   border-color: black;
   width: 200px;
-  margin-left: 460;
-
 }
 
 button
 {
   background-color: #f22121 !important;
   color: white;
-  margin-left: 622px;
+  margin-left: 635px;
   margin-top: 10px;
   font-size: 18px;
   height: 30px;
