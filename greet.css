@@ -37,13 +37,18 @@ h1
   border-color: #f22121 !important;
 }
 
+img
+{
+  margin-top: -25px;
+}
 label
 {
   color: black;
   font-size: 20px;
-  margin-left: 50px;
-  margin-top: 150px;
+  margin-left: 460px;
+  margin-top: -150px;
   font-family: "sans-serif";
+  display:block;
 }
 
 input
@@ -52,6 +57,7 @@ input
   border-width: medium;
   border-color: black;
   width: 200px;
+  margin-left: 460;
 
 }
 
@@ -59,7 +65,7 @@ button
 {
   background-color: #f22121 !important;
   color: white;
-  margin-left: 225px;
+  margin-left: 622px;
   margin-top: 10px;
   font-size: 18px;
   height: 30px;
@@ -69,4 +75,6 @@ button
 hr
 {
   border-top: 4px solid #f22121;
+  margin-top: 50px;
+
 }
