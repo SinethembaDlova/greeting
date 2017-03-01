@@ -47,7 +47,7 @@ label
   color: black;
   font-size: 20px;
   margin-left: 460px;
-  margin-top: 150px;
+  margin-top: 130px;
   font-family: "sans-serif";
   display:inline-block;
 }
@@ -57,6 +57,51 @@ input
   border-width:medium;
   border-color: black;
   width: 200px;
+}
+
+#radio1
+{
+  margin-left: 470px;
+  margin-top: 20px;
+  width: 50px;
+}
+
+#radio2
+{
+  width: 140px;
+}
+
+#radio3
+{
+  width: 50px;
+}
+
+#lang1
+{
+  color: black;
+  font-size: 12px;
+  margin-left: 460px;
+  margin-top: -100px;
+  font-family: "sans-serif";
+  display:inline-block;
+}
+
+#lang2
+{
+  color: black;
+  font-size: 12px;
+  margin-left:57px;
+  font-family: "sans-serif";
+  display: inline-block;
+}
+
+#lang3
+{
+  color: black;
+  font-size: 12px;
+  margin-left: 100;
+  font-family: "sans-serif";
+  display: inline-block;
 }
 
 button
