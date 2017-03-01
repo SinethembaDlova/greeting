@@ -18,7 +18,7 @@
       <img src="images/molo-image.jpg" alt="An image of someone who greets">
 
       <label for="name">Name:</label>
-      <input type="text" name="name" value=""> <br>
+      <input type="text" name="name" value="" id="takename"> <br>
 
       <div class="language">
         <input type="radio" name="language" value="Afrikaans"> <br>
@@ -36,19 +36,28 @@
       </div>
 
       <div class="counterdiv">
-        <p>0</p>
+        <p id="countertext">0</p>
       </div>
       <br>
 
-      <button type="button" name="Greet me">Greet me</button>
+      <button type="button" name="Greet me" onclick="greet()">Greet me</button>
       <br>
       <hr>'
     </div>
 
-    <div class="output">
-    <p>Hello, </p>
+    <div class="outputdiv">
+    <p id="greetname"></p>
     </div>
   </div>
 
+<script>
+  var greet = function()
+  {
+    var x =document.getElementById("takename").value;
+    document.getElementById('greetname').innerHTML="Hello, " + x;
+    return x;
+  }
+  greet();
+</script>
   </body>
 </html>
