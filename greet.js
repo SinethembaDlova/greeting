@@ -1,12 +1,7 @@
-var greet = function(name)
+var greet = function()
 {
-  return "Hello, " + name;
-};
-greet("Andile");
-
-var molo = greet("Andile");
-console.log(molo);
-
-
-/*  margin-left: 470px;
-  margin-top: -10px;*/
+  var x =document.getElementById("takename").value;
+  document.getElementById('greetname').innerHTML="Hello, " + x;
+  return x;
+}
+greet();
