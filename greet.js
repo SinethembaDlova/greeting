@@ -1,7 +1,10 @@
+var showText = document.getElementById('takename');
+var displayText = document.getElementById('greetname');
+
 var greet = function()
 {
-  var x =document.getElementById("takename").value;
-  document.getElementById('greetname').innerHTML="Hello, " + x;
-  return x;
+  showText.value;
+  displayText.innerHTML = "Hello, " + showText.value;
+  return getText;
 }
 greet();
