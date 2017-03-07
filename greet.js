@@ -7,24 +7,23 @@ var displayText = document.querySelector('#greetname');
 var greet = function()
 {
   takeText.value;
-  console.log(radioButtons[0]);
+
 
   for(i = 0; i < radioButtons.length; i++)
   {
-    if (radioButtons.checked == radioButtons[i])
+    if (radioButtons[i].checked)
     {
-      displayText.innerHTML = "Dumela, " + takeText.value;
+      switch (i)
+      {
+        case 0 : displayText.innerHTML = "Dumela, " + takeText.value;
+        break;
+        case 1 : displayText.innerHTML = "Hello, " + takeText.value;
+        break;
+        case 2 : displayText.innerHTML = "Molo, " + takeText.value;
+      }
     }
 
-    else if (radioButtons.checked == radioButtons[1])
-    {
-      displayText.innerHTML = "Hello, " + takeText.value;
-    }
 
-    else if (radioButtons.checked == radioButtons[2])
-    {
-      displayText.innerHTML = "Molo, " + takeText.value;
-    }
   }
 
   return takeText.value;
