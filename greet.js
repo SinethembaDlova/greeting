@@ -2,13 +2,14 @@ var takeText = document.querySelector('#takename');
 var radioButtons = document.getElementsByName('language');
 var greetmeButton = document.querySelector('#gbutton');
 var displayText = document.querySelector('#greetname');
+var countGreets = document.querySelector('#countertext');
+var count = 0;
+storeGreets = [];
 
+countGreets.innerHTML = count;
 
 var greet = function()
 {
-  takeText.value;
-
-
   for(i = 0; i < radioButtons.length; i++)
   {
     if (radioButtons[i].checked)
@@ -22,11 +23,17 @@ var greet = function()
         case 2 : displayText.innerHTML = "Molo, " + takeText.value;
       }
     }
-
-
   }
+
+
+    if (greetmeButton.onclick)
+    {
+      count++;
+      countGreets.innerHTML = count;
+    }
 
   return takeText.value;
 };
+
 
 greetmeButton.addEventListener('click', greet);
