@@ -84,10 +84,9 @@ input
 
 .counterdiv
 {
-
   display: inline-block;
   margin-top: -29px;
-  margin-left: 860px;
+  margin-left: 840px;
   float: left;
   padding-bottom: 0;
 }
@@ -95,9 +94,10 @@ input
 .counterdiv p
 {
   font-family: "sans-serif";
-  font-size: 50px;
+  font-size: 56px;
   margin-top: 0px;
-  margin-right: 30px;
+  text-align: center;
+  margin-right: auto;
 }
 
 .counterdiv button
@@ -107,9 +107,9 @@ input
   color: white;
   font-size: 10px;
   height: 32px;
-  width: 100px;
+  width: 120px;
   margin-top: -60px;
-  margin-left: auto
+  margin-left: auto;
 
 }
 button
