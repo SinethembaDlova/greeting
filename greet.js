@@ -6,6 +6,7 @@ var displayText = document.querySelector('#greetname');
 var countGreets = document.querySelector('#countertext');
 var resetButton = document.querySelector('#rButton');
 var count = 0;
+var nameGreeted = {};
 
 //localStorage so that the number of greetings can stored in browser
 countGreets.innerHTML = count;
@@ -14,6 +15,11 @@ if(storeCountValue)
 {
   count = Number(storeCountValue);
   countGreets.innerHTML = count;
+}
+
+if (localStorage.getItem('nameGreeted')===null)
+{
+  localStorage.setItem('nameGreeted', JSON.stringify(nameGreeted));
 }
 
 //function to greet someone with their prefered language
@@ -32,9 +38,16 @@ var greet = function()
         case 2 : displayText.innerHTML = "Molo, " + takeText.value;
       }
 
-      count++;
-      localStorage.setItem("countGreets", count);
-      countGreets.innerHTML = count;
+      nameGreeted = JSON.parse(localStorage.getItem('nameGreeted'));
+      if (nameGreeted[takeText.value] === undefined)
+      {
+          nameGreeted[takeText.value] = true;
+          localStorage.setItem('nameGreeted', JSON.stringify(nameGreeted));
+          count++;
+          localStorage.setItem("countGreets", count);
+          countGreets.innerHTML = count;
+      }
+
     }
   }
 
