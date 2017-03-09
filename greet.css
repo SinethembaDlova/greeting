@@ -110,7 +110,7 @@ input
   width: 120px;
   margin-top: -60px;
   margin-left: auto;
-
+  border-radius: 6px;
 }
 button
 {
@@ -124,6 +124,7 @@ button
   width: 290px;
   display: block;
   position: relative;
+  border-radius: 6px;
 }
 
 button:hover

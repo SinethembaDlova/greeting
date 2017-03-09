@@ -1,3 +1,4 @@
+//where I decalre and initials. Where I target html element
 var takeText = document.querySelector('#takename');
 var radioButtons = document.getElementsByName('language');
 var greetmeButton = document.querySelector('#gbutton');
@@ -6,19 +7,20 @@ var countGreets = document.querySelector('#countertext');
 var resetButton = document.querySelector('#rButton');
 var count = 0;
 
+//localStorage so that the number of greetings can stored in browser
+countGreets.innerHTML = count;
 var storeCountValue = localStorage.getItem("countGreets");
-
 if(storeCountValue)
 {
   count = Number(storeCountValue);
   countGreets.innerHTML = count;
 }
 
+//function to greet someone with their prefered language
 var greet = function()
 {
   for(i = 0; i < radioButtons.length; i++)
-  {
-
+   {
     if (radioButtons[i].checked)
     {
       switch (i)
@@ -39,11 +41,11 @@ var greet = function()
   return takeText.value;
 };
 
-/*var reset = function()
+var reset = function()
 {
-  localStorage.removeItem("countGreets", count);
+  localStorage.removeItem(countGreets);
   countGreets.innerHTML = count;
-};*/
+};
 
 greetmeButton.addEventListener('click', greet);
-//resetButton.addEventListener('click', reset);
+resetButton.addEventListener('click', reset);
