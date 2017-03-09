@@ -39,6 +39,7 @@ var greet = function()
       }
 
       nameGreeted = JSON.parse(localStorage.getItem('nameGreeted'));
+
       if (nameGreeted[takeText.value] === undefined)
       {
           nameGreeted[takeText.value] = true;
@@ -46,6 +47,8 @@ var greet = function()
           count++;
           localStorage.setItem("countGreets", count);
           countGreets.innerHTML = count;
+
+          console.log(count);
       }
 
     }
@@ -56,9 +59,11 @@ var greet = function()
 
 var reset = function()
 {
-  localStorage.removeItem(countGreets);
+  localStorage.clear();
+  count = 0
   countGreets.innerHTML = count;
 };
 
+//call the fuctions when the click event has happened
 greetmeButton.addEventListener('click', greet);
 resetButton.addEventListener('click', reset);
