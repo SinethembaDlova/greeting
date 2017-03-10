@@ -38,6 +38,7 @@ var greet = function()
         case 2 : displayText.innerHTML = "Molo, " + takeText.value;
       }
 
+      takeText.value = '';
       nameGreeted = JSON.parse(localStorage.getItem('nameGreeted'));
 
       if (nameGreeted[takeText.value] === undefined)
