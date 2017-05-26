@@ -1,3 +1,4 @@
+"use strict"
 //where I decalre and initials. Where I target html element
 var takeText = document.querySelector('#takename');
 var radioButtons = document.getElementsByName('language');
